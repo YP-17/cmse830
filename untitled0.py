@@ -22,7 +22,7 @@ with dataExploration:
     st.header('Dataset: Wisconsin cancer dataset')
     st.text('I found this dataset at Kaggle ')
 
-df_data = pd.read_csv("C:/Users/dell/Downloads/ICA6/data.csv")
+df_data = pd.read_csv("https://raw.githubusercontent.com/YP-17/cmse830/main/data.csv")
 print(df_data)
 
 
