@@ -9,8 +9,7 @@ import streamlit as st
 import seaborn as sns
 import pandas as pd
 import matplotlib.pyplot as plt
-import plotly.figure_factory as ffš
-import plotly.express as px
+
 
 siteHeader = st.container()
 dataExploration = st.container()
