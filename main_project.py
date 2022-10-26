@@ -3,7 +3,7 @@ import pandas as pd
 import altair as alt
 from PIL import Image
 
-data_ghg = pd.read_csv("C:/Users/dell/Desktop/main project/ghg-emissions-by-sector.csv")
+data_ghg = pd.read_csv("https://github.com/YP-17/cmse830/blob/main/ghg-emissions-by-sector.csv")
 
 
 st.subheader("""
@@ -158,7 +158,7 @@ elif option == 'Year Vs Country':
     if st.button('Click here for observations'):
         st.write(""" Over that span of 29 years similar countries are responsible
                  for 85% of pollution and the net ghg emmisions are increasing""")
-        image = Image.open('E:/My Life/MSU Courses/CMSE830/project/main project/global_emissions_sector_2015.png')
+        image = Image.open('https://github.com/YP-17/cmse830/blob/main/global_emissions_sector_2015.png')
         st.image(image, caption='Data of 1990-2019')
     st.altair_chart((reqchart1).interactive(), use_container_width=True)
     
@@ -232,7 +232,7 @@ elif option == 'Country Vs % Change in year' :
     if st.button('Click here for observations'):
         st.write("""Net change for each country before 2015 is on rise but
                  Paris agreement made it to become lower""")
-        image = Image.open('E:/My Life/MSU Courses/CMSE830/project/main project/1578429041326.png')
+        image = Image.open('https://github.com/YP-17/cmse830/blob/main/1578429041326.png')
         st.image(image, caption='Goals of Paris Agreement')
                  
     st.altair_chart((reqchart1).interactive(), use_container_width=True)
