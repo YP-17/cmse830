@@ -3,7 +3,7 @@ import pandas as pd
 import altair as alt
 from PIL import Image
 
-data_ghg = pd.read_csv("https://github.com/YP-17/cmse830/blob/main/ghg-emissions-by-sector.csv")
+data_ghg = pd.read_csv("https://github.com/YP-17/cmse830/blob/main/ghg-emissions-by-sector.csv", delimiter=',', header=None)
 
 
 st.subheader("""
